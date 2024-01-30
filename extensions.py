@@ -16,7 +16,7 @@ def extension(name = "application/octet-stream"):
     elif '.pdf' in name.casefold():
         print("application" , "pdf", sep="/")
     elif '.txt' in name.casefold():
-        print("text" , "txt", sep="/")
+        print("text" , "plain", sep="/")
     elif '.zip' in name.casefold():
         print("application" , "zip", sep="/")                    
     else:
