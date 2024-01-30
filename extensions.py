@@ -8,7 +8,7 @@ def extension(name = "application/octet-stream"):
     if name.casefold().endswith(".gif"):
         print("image", "gif", sep="/")
     elif name.casefold().endswith(".jpg"):
-        print("image", "jpg", sep="/")
+        print("image", "jpeg", sep="/")
     elif name.casefold().endswith(".jpeg"):
         print("image", "jpeg", sep="/")
     elif name.casefold().endswith(".png"):
