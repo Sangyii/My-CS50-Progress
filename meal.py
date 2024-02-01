@@ -2,7 +2,7 @@ def main():
     main_input = input(str("What time is it? ")).strip()
     convert(main_input)
     
-    if "a.m." in convert(main_input) or "p.m." in convert(main_input):
+    if "a.m." in main_input or "p.m." in main_input:
         hours, the_time = convert(main_input)
         hours, minutes = hours.split(".")
         hours = int(hours)
@@ -27,7 +27,7 @@ def main():
         else:
             print()     
     
-    elif "a.m." not in convert(main_input) or "p.m." not in convert(main_input):
+    elif "a.m." not in main_input or "p.m." not in main_input:
         hours, minutes = convert(main_input).split(".")
         hours = int(hours)
         minutes = int(minutes)
