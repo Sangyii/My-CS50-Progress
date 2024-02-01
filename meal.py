@@ -9,18 +9,16 @@ def main():
         minutes = int(minutes)
         the_time = str(the_time)
         
-        if 7 <= hours < 8 and 0 <= minutes < 100 or hours == 8 and minutes == 0:
-            if the_time == "am":
+        if the_time == "am":
+            if 7 <= hours < 8 and 0 <= minutes < 100 or hours == 8 and minutes == 0:
                 print("Breakfast Time")
             else:
                 print()
-        elif hours == 12 and 0 <= minutes < 100 or hours == 1 and minutes == 0:
-            if the_time == "pm":
+                
+        elif the_time == "pm":        
+            if hours == 12 and 0 <= minutes < 100 or hours == 1 and minutes == 0:
                 print("Lunch Time")
-            else:
-                print()
-        elif hours == 6 and 0 <= minutes < 100 or hours == 7 and minutes == 0:
-            if the_time == "pm":
+            elif hours == 6 and 0 <= minutes < 100 or hours == 7 and minutes == 0:
                 print("Dinner Time")
             else:
                 print()
