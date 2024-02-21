@@ -4,7 +4,7 @@ def main():
     
     
 def interpreter(final):
-    x , y, z = final.split()
+    x, y, z = final.split()
     x = int(x)
     z = int(z)
     
