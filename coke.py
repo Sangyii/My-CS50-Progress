@@ -20,7 +20,7 @@ def coin_denomination(amount, coin_dues):
     while amount == 25 or amount == 10 or amount == 5:
         coin_dues -= amount
         return int(coin_dues)
-    
+    return coin_dues
     
 if __name__ == "__main__":
     main()
