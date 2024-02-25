@@ -4,8 +4,9 @@ def main():
     
 def vowels(main_input):
     vowel_list = ["a", "i", "u", "e", "o"]
-    for j in vowel_list:
-        main_input = main_input.casefold().replace(j, "")
+    vowel_list_case = [j for j in vowel_list] + [j.upper() for j in vowel_list]
+    for j in vowel_list_case:
+        main_input = main_input.replace(j, "")
             
     print(f"Output: {main_input}", end="")
     
